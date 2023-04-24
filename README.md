@@ -1,2 +1,2 @@
 # forte.js
-A JavaScript wrapper for the Forte API
+Forte API client for JavaScript
