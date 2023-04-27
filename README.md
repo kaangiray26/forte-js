@@ -21,3 +21,20 @@ await window.ft.login("http://localhost:3000", "forte", "alternative");
 let tracks = await ft.random_tracks();
 console.log(tracks);
 ```
+
+## Methods
+### ft.login
+-> Login using credentials and get session
+
+Parameters
+| name     | type     | data type | description          |
+| -------- | -------- | --------- | -------------------- |
+| server   | required | string    | Forte server address |
+| username | required | string    | Forte username       |
+| token    | required | string    | Forte user token     |
+
+Responses
+| type    | data type | response                         |
+| ------- | --------- | -------------------------------- |
+| success | boolean   | true                             |
+| error   | error     | Failed to login via credentials. |
