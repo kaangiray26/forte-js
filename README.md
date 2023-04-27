@@ -42,5 +42,6 @@ console.log(tracks);
 | ------- | --------- | -------------------------------- |
 | success | boolean   | true                             |
 | error   | error     | Failed to login via credentials. |
+
 </details>
 ---
