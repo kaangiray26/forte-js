@@ -47,3 +47,16 @@ console.log(tracks);
 ### ft.API
 >Make a GET request to the API
 
+**Parameters**
+
+| name  | type     | data type | description                 |
+| ----- | -------- | --------- | --------------------------- |
+| query | required | string    | API Endpoint with arguments |
+
+**Responses**
+
+| type     | data type | response |
+| -------- | --------- | -------- |
+| response | JSON      | Object   |
+
+---
