@@ -24,7 +24,7 @@ console.log(tracks);
 
 ## Methods
 ### ft.login
--> Login using credentials and get session
+>Login using credentials and get session
 
 <details>
 <summary>Details</summary>
@@ -42,3 +42,4 @@ console.log(tracks);
 | success | boolean   | true                             |
 | error   | error     | Failed to login via credentials. |
 </details>
+---
