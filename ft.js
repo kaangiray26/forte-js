@@ -1,5 +1,4 @@
-// ft.js
-// Forte API client for JavaScript
+export { Forte }
 
 class Forte {
     constructor(server, username, token) {
@@ -900,5 +899,3 @@ class Forte {
     }
 
 }
-
-export { Forte }
