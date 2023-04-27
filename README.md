@@ -27,11 +27,7 @@ console.log(tracks);
 ### ft.login
 >Login using credentials and get session
 
-<details>
-<summary>Details</summary>
-
 **Parameters**
-
 | name     | type     | data type | description          |
 | -------- | -------- | --------- | -------------------- |
 | server   | required | string    | Forte server address |
@@ -39,12 +35,9 @@ console.log(tracks);
 | token    | required | string    | Forte user token     |
 
 **Responses**
-
 | type    | data type | response                         |
 | ------- | --------- | -------------------------------- |
 | success | boolean   | true                             |
 | error   | error     | Failed to login via credentials. |
-
-</details>
 
 ---
