@@ -1,33 +1,33 @@
-// ft.js
-// Forte API client for JavaScript
-
 class Forte {
-    constructor(server, username, token) {
-        this.username = username;
-        this.token = token;
-        this.server = server;
+    constructor() {
+        this.username = null;
+        this.token = null;
+        this.server = null;
 
         this.online = false;
         this.session = null;
-
-        this.login();
     }
 
     // Login using credentials and get session
-    async login() {
-        let auth = btoa(this.username + ":" + this.username);
-        await fetch(this.server + '/api/session', {
+    async login(server, username, token) {
+        this.server = server;
+        this.username = username;
+        this.token = token;
+
+        let auth = btoa(this.username + ":" + this.token);
+        return await fetch(this.server + '/api/session', {
             method: 'GET',
             headers: {
                 'Authorization': 'Basic ' + auth
             }
         })
-            .then((response) => {
+            .then((res) => {
                 this.online = true;
-                return response.json();
+                return res.json();
             })
-            .then((response) => {
-                this.session = response.session;
+            .then((res) => {
+                this.session = res.session;
+                return true;
             })
             .catch((error) => {
                 console.log(error);
@@ -901,4 +901,6 @@ class Forte {
 
 }
 
-export { Forte }
+(function (window) {
+    window.ft = new Forte();
+})(window);
