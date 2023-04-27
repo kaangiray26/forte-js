@@ -3,7 +3,8 @@ Forte API client for JavaScript
 
 ## Features
 * forte-js provides a simple interface for making API calls to Forte.
-* forte-js supports only the browser environment.
+* All methods return a promise.
+* Only supports the browser environment.
 
 ## Including in your project
 * [ft.js](https://kaangiray26.github.io/forte-js/ft.js)
