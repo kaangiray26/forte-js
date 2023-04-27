@@ -27,7 +27,7 @@ console.log(tracks);
 -> Login using credentials and get session
 
 <details>
-<summary><button>Details<button</summary>
+<summary>Details</summary>
 
 **Parameters**
 | name     | type     | data type | description          |
